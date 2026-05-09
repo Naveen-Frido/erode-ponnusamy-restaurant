@@ -1,0 +1,47 @@
+.trust-bar {
+  background-color: var(--color-bg-secondary);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--space-md);
+}
+
+.trust-card {
+  text-align: center;
+  padding: var(--space-md) var(--space-sm);
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.trust-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(212, 175, 55, 0.3);
+}
+
+.trust-icon {
+  color: var(--color-accent-secondary);
+  margin-bottom: var(--space-sm);
+  display: flex;
+  justify-content: center;
+}
+
+.trust-title {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+  color: var(--color-accent-primary);
+  font-weight: 700;
+}
+
+.trust-subtitle {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
